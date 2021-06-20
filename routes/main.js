@@ -22,7 +22,7 @@ router.get("/home", (req, res, next) => {
 });
 
 router.get("/", (req, res, next) => {
-  res.sendFile(path.join(rootDir, "views", "home.html"));
+  res.render('index')
 });
 
 module.exports = router;
